@@ -1,0 +1,68 @@
+import { Employee } from "@/types/employee";
+
+export const initialEmployees: Employee[] = [
+  {
+    id: "emp-001",
+    name: "Aarav Sharma",
+    email: "aarav.sharma@company.com",
+    department: "Engineering",
+    role: "Frontend Developer",
+    status: "Active",
+  },
+  {
+    id: "emp-002",
+    name: "Priya Patel",
+    email: "priya.patel@company.com",
+    department: "Design",
+    role: "UI/UX Designer",
+    status: "Active",
+  },
+  {
+    id: "emp-003",
+    name: "Rohan Gupta",
+    email: "rohan.gupta@company.com",
+    department: "Engineering",
+    role: "Backend Developer",
+    status: "Active",
+  },
+  {
+    id: "emp-004",
+    name: "Sneha Reddy",
+    email: "sneha.reddy@company.com",
+    department: "Marketing",
+    role: "Marketing Manager",
+    status: "Inactive",
+  },
+  {
+    id: "emp-005",
+    name: "Vikram Singh",
+    email: "vikram.singh@company.com",
+    department: "Product",
+    role: "Product Manager",
+    status: "Active",
+  },
+  {
+    id: "emp-006",
+    name: "Ananya Iyer",
+    email: "ananya.iyer@company.com",
+    department: "Engineering",
+    role: "Full Stack Developer",
+    status: "Active",
+  },
+  {
+    id: "emp-007",
+    name: "Karan Mehta",
+    email: "karan.mehta@company.com",
+    department: "HR",
+    role: "HR Coordinator",
+    status: "Inactive",
+  },
+  {
+    id: "emp-008",
+    name: "Divya Nair",
+    email: "divya.nair@company.com",
+    department: "Finance",
+    role: "Financial Analyst",
+    status: "Active",
+  },
+];

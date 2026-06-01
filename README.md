@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EmpBoard — Employee Management Dashboard
 
-## Getting Started
+A modern, responsive CRUD-based Employee Management Dashboard built with **Next.js 15**, **TypeScript**, and **Tailwind CSS**.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Dashboard Overview** — Real-time stats showing total, active, and inactive employees
+- **Full CRUD** — Create, Read, Update, and Delete employees
+- **Live Search** — Search employees by name or email instantly
+- **Form Validation** — Client-side validation with inline error messages
+- **Delete Confirmation** — Safety modal before destructive actions
+- **Responsive Design** — Optimized for mobile, tablet, and desktop
+- **Empty State** — Clean fallback UI when no employees exist
+- **Modern UI** — Linear/Vercel-inspired minimal design with subtle animations
+
+## 🛠 Tech Stack
+
+| Technology     | Purpose               |
+| -------------- | --------------------- |
+| Next.js 15     | React framework       |
+| TypeScript     | Type safety           |
+| Tailwind CSS   | Styling               |
+| React State    | State management      |
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── globals.css        # Global styles & animations
+│   ├── layout.tsx         # Root layout with Inter font
+│   └── page.tsx           # Main dashboard page (CRUD logic)
+├── components/
+│   ├── dashboard-cards.tsx # Overview stat cards
+│   ├── employee-form.tsx  # Add/Edit modal form
+│   ├── employee-table.tsx # Responsive table + mobile cards
+│   └── search-bar.tsx     # Search input + add button
+├── data/
+│   └── employees.ts       # Seed/dummy employee data
+└── types/
+    └── employee.ts        # TypeScript interfaces
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js 18+
+- npm
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Clone the repository
+git clone <repo-url>
+cd challenge1/day1
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Install dependencies
+npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Start development server
+npm run dev
+```
 
-## Deploy on Vercel
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Build for Production
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+npm start
+```
+
+## 📸 Screenshots
+
+_Add screenshots here after running the project._
+
+## 📄 License
+
+MIT
